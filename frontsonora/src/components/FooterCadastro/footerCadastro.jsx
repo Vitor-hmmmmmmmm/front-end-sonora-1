@@ -1,8 +1,8 @@
-import "./footerCadastro.css"
+import "./FooterCadastro.css"
 import React from 'react';
 import { useState } from 'react';
 
-const Footer = () => {
+const FooterCadastro = () => {
     const [email, setEmail] = useState('');
 
     const handleSubmit = (e) => {
@@ -12,8 +12,8 @@ const Footer = () => {
     };
 
     return (
-        <footer className='footer'>
-            <div className='footer-section'>
+        <footer className='footerCadastro'>
+            <div className='footerCadastro-section'>
                 <div>
                     <p>Email: Sonora@email.com</p>
                 </div>
@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='footer-section'>
+            <div className='footerCadastro-section'>
                 <ul>
                     <li><a href="/sobre-nos">Sobre Nós</a></li>
                     <li><a href="/politica-de-privacidade">Política de Privacidade</a></li>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='footer-section'>
+            <div className='footerCadastro-section'>
                 <div>
                     <a href="https://instagram.com/sonora" target="_blank" rel="noopener noreferrer">Nosso Instagram</a>
                 </div>
@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
             </div>
             
-            <div className='footer-section footer-form'>
+            <div className='footerCadastro-section footerCadastro-form'>
                 <h3>Cadastre-se para novidades</h3>
                 <form onSubmit={handleSubmit}>
                     <input 
@@ -53,11 +53,11 @@ const Footer = () => {
                 </form>
             </div>
 
-            <div className='footer-section footer-copyright'>
+            <div className='footerCadastro-section footerCadastro-copyright'>
                 <p>&copy; 2025 Sonora. Todos os direitos reservados.</p>
             </div>
         </footer>
     );
 };
 
-export default Footer;
+export default FooterCadastro;

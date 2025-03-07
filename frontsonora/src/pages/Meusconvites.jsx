@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HeaderCadastrado from '../components/HeaderCadastrado/headercadastrado';
-import FooterCadastro from '../components/Footer/footerCadastro';
-import Footer from '../components/Footer/footer';
+import FooterCadastro from '../components/FooterCadastro/FooterCadastro.jsx';
 import './css/global.css';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,6 @@ function MeusConvites() {
     const [eventos, setEventos] = useState([]);
 
     useEffect(() => {
-        // Simulação de chamada à API para buscar os eventos do usuário
         fetch('/api/meus-convites')
             .then(response => response.json())
             .then(data => setEventos(data))
@@ -38,7 +36,7 @@ function MeusConvites() {
                 </div>
             </main>
             <FooterCadastro />
-            <Footer />
+            
         </>
     );
 }

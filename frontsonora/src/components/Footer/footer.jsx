@@ -1,10 +1,10 @@
 
 import './footer.css';
 import './footer.css'
-const Footer = () => {
+const FooterPrincipal = () => {
     return (
         <footer className='footer'>
- HEAD
+ 
             <div className='footer-section'>
                 <div>
                     <p>Email: Sonora@email.com</p>
@@ -56,4 +56,4 @@ const Footer = () => {
 };
 
 
-export default Footer;
+export default FooterPrincipal;
